@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header.row.headTest
+      .col-8
+        button.btn.btn-primary(style='margin-right:10px') Добавить
+        button.btn.btn-primary Обновить
+      .col-4.input-group.mb-3
+        .input-group-prepend
+          .input-group-text
+            img(src="/images/poisk.png")
+        input.form-control(placeholder="Событие, дата или участник")
+
+    block content
